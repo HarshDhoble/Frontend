@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylcal.css">
+</head>
+<body>
+<form name="calculator">
+        <div id="table">
+            <table>
+                <tr>
+                    <th colspan="4">
+                     <div class="display"><input type="text" name="display" id="display" readonly size="18"/></div> 
+                    </th> 
+                </tr>
+                <tr>
+                  <td><input type="button" class="button black" name="one" value="1" onclick='v("1")'/></td>
+                  <td><input type="button" class="button black" name="two" value="2" onclick='v("2")'/></td>
+                  <td><input type="button" class="button black" name="three" value="3" onclick='v("3")'/></td>
+                  <td><input type="button" class="button operator" name="plus" value="+" onclick='v("+")'/></td>
+               </tr>
+               <tr>
+                  <td><input type="button" class="button black" name="four" value="4" onclick='v("4")'/></td>
+                  <td><input type="button" class="button black" name="five" value="5" onclick='v("5")'/></td>
+                  <td><input type="button" class="button black" name="six" value="6" onclick='v("6")'/></td>
+                  <td><input type="button" class="button operator" name="minus" value="-" onclick='v("-")'/></td>
+               </tr>
+               <tr>
+                  <td><input type="button" class="button black" name="seven" value="7" onclick='v("7")'/></td>
+                  <td><input type="button" class="button black" name="eight" value="8" onclick='v("8")'/></td>
+                  <td><input type="button" class="button black" name="nine" value="9" onclick='v("9")'/></td>
+                  <td><input type="button" class="button operator" name="times" value="x" onclick='v("*")'/></td>
+               </tr>
+               <tr>
+                  <td><input type="button" class="button black" id="clear" name="clear" value="c" onclick='c("")'/></td>
+                  <td><input type="button" class="button black" name="zero" value="0" onclick='v("0")'/></td>
+                  <td><input type="button" class="button orange"name="doit" value="=" onclick='e()'/></td>
+                  <td><input type="button" class="button operator" name="div" value="/" onclick='v("/")'/></td>
+               </tr>
+            </table>
+        </div>
+    </form>
+    <script>
+        function c(val)
+            {
+                document.getElementById("display").value=val;
+            }
+        function v(val)
+            {
+                document.getElementById("display").value+=val;
+            }
+        function e() 
+            { 
+                try 
+                { 
+                    c(eval(document.getElementById("display").value)) 
+                } 
+            catch(e) 
+                {
+                    c('Error') 
+                } 
+            }  
+    </script>
+</body>
+</html>

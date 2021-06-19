@@ -1,0 +1,88 @@
+body  
+{  
+background-color:tan;  
+}  
+#table  
+{  
+background-color:#3d4543;  
+height:290px;  
+width:280px;  
+border-radius:10px;  
+position:relative;  
+top:80px;  
+left:40%; 
+box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+.display  
+{
+width: 220px;  
+position:relative;  
+top:20px;  
+height:40px;  
+}  
+.display input  
+{  
+position:relative;
+left: 17px;
+top:2px;  
+height:35px;  
+color:black;  
+background-color:#bccd95;  
+font-size:21px;  
+text-align:right;  
+}
+input[type="button"] 
+         { 
+         position: relative;
+         top:30px;
+         width:40px;  
+         height:40px;  
+         border:none;  
+         border-radius:8px;  
+         margin-left:15px;  
+         cursor:pointer;  
+         border-top:2px solid transparent;
+         } 
+         .button.operator 
+         {  
+         color:black;  
+         background-color:#ff4561;  
+         border-bottom:black 2px solid;  
+         }  
+         .button.black  
+         {  
+         color:white;  
+         background-color:#303030;  
+         border-bottom:black 2px solid;  
+         border-top:2px #303030 solid;  
+         }  
+         .button.orange  
+         {  
+         color:black;  
+         background-color:#FF9933;  
+         border-bottom:black 2px solid;  
+         border-top:2px #FF9933 solid;  
+         }
+         .pink:active  
+         {  
+         border-top:black 2px solid;  
+         border-bottom:#ff4561 2px solid;  
+         }  
+         .black:active  
+         {  
+         border-top:black 2px solid;  
+         border-bottom:#303030 2px solid;  
+         }  
+         .orange:active  
+         {  
+         border-top:black 2px solid;  
+         border-bottom:#FF9933 2px solid;  
+         } 
+         table, th, td {
+          border: none;
+          border-collapse: collapse;
+        }
+        td {
+          padding: 5px;
+          position: relative;
+        }
