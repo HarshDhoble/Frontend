@@ -1,3 +1,4 @@
+//JavaScript program to join all elements 
 Array1 = ["Red", "Green", "White", "Black"];
 console.log(Array1.toString());
 console.log(Array1.join());
