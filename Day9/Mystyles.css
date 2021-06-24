@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/*use only the available space inside the 400x400 frame*/
+body{
+    background-color: #66DE93;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.status{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 600px;
+  font-family: Georgia, serif;;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: space-between;
+  color: #FFEAC9;
+}
+.container{
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 500px;
+}
+.frame {
+  height: auto;
+  display: grid;
+  grid-gap: 5px;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  
+}
+.block{
+  width: 80px;
+  height: 80px;
+  background-color: brown;
+}
+.clicked{
+    background: rgb(222, 71, 56);
+}
+.block:hover{
+    background-color: rgb(236, 81, 66);
+}
