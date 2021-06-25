@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #242B2E;
+    
+}
+.status{
+    display: flex;
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    transform: translateX(-50%);
+    height: 100px;
+    width: 600px;
+    font-family: Georgia, serif;;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFEAC9;
+  }
+.gameContainer {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+.card {
+    width: 23%;
+    height: 23%;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+}
+.card:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+  
+  .front,
+  .back {
+    background-color: #758283;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+  }
+  .message{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
