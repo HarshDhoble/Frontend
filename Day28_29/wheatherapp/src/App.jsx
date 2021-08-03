@@ -8,7 +8,6 @@ function App() {
   const theme = useSelector((state) => state.theme);
   return (
     <div className={theme ? "App dark" : "App"}>
-      <header className="App-header">Weather App</header>
       <Form/>
       <WeatherCard />
       <ToggleTheme />
